@@ -1,9 +1,24 @@
-resource "random_pet" "prefix" {}
+########################
+#     Resource map     #
+########################
+# - primary resource group 
+# - kubernetes cluster
 
+########################
+#       Provider       #
+########################
 provider "azurerm" {
   features {}
 }
 
+########################
+#       Resource       #
+########################
+
+# Random name generator
+resource "random_pet" "prefix" {}
+
+# Primary Resource Group
 resource "azurerm_resource_group" "default" {
   name     = "${random_pet.prefix.id}-rg"
   location = var.resource_group_location
@@ -13,6 +28,7 @@ resource "azurerm_resource_group" "default" {
   }
 }
 
+# Main Kubernetes Cluster
 resource "azurerm_kubernetes_cluster" "default" {
   name                = "${random_pet.prefix.id}-aks"
   location            = azurerm_resource_group.default.location
