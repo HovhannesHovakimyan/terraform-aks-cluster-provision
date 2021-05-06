@@ -1,5 +1,5 @@
-# terraform-aks-provision
-In this example I'm demonstrating how to deploy Azure Kubernetes Service using Terraform.
+# terraform-aks-cluster-provision
+In this solution I'm demonstrating how to deploy Azure Kubernetes Service using Terraform.
 
 # Getting Started
 - Make sure you have Azure CLI and Terraform CLI installed
