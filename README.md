@@ -8,6 +8,6 @@ In this solution I'm demonstrating how to deploy Azure Kubernetes Service using 
 - export the following environment variables, filling in the values of appID and Password from the previous command: 
   - TF_VAR_appId
   - TF_VAR_appPassword
-- Download this Git Repo: 
-  - git clone https://github.com/HovhannesHovakimyan/terraform-aks-provision.git
-- And deploy the provided terraform solution
+- Download the current Git Repo
+- And deploy the provided terraform solution: 
+  - terraform apply
