@@ -10,4 +10,5 @@ In this solution I'm demonstrating how to deploy Azure Kubernetes Service using 
   - TF_VAR_appPassword
 - Download the current Git Repo
 - And deploy the provided terraform solution: 
+  - terraform init
   - terraform apply
