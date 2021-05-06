@@ -1,4 +1,4 @@
-# terraform-aks-cluster-provision
+# terraform-provision-aks-cluster
 In this solution I'm demonstrating how to deploy Azure Kubernetes Service using Terraform.
 
 # Getting Started
